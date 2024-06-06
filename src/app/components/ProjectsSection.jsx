@@ -9,8 +9,8 @@ const projectsData = [
     id: 1,
     title: "Flix",
     description: "Flix, a movie experience website, where all the latest movies from netflix are available to choose from.",
-    image: "/images/projects/project_1.png",
-    tag: ["All", "Web"],
+    image: "/images/project_1.png",
+    tag: ["All", "Web Projects"],
     gitUrl: "https://github.com/kazekunal/flix",
     previewUrl: "https://flix-2gslfzebm-kazekunal.vercel.app/",
   },
@@ -18,8 +18,8 @@ const projectsData = [
     id: 2,
     title: "PharmLink+",
     description: "The future of secure healthcare, our blockchain-powered system is revolutionizing medical prescription management, eliminating fraud and ensuring patient safety with unparalleled transparency and accountability.",
-    image: "/images/projects/project_2.png",
-    tag: ["All", "Web"],
+    image: "/images/project_2.png",
+    tag: ["All", "Web Projects"],
     gitUrl: "https://github.com/kazekunal/hackathon",
     previewUrl: "/",
   },
@@ -27,8 +27,8 @@ const projectsData = [
     id: 3,
     title: "BuzzJob",
     description: "BuzzJobs is a job portal built using Next.js and SQL, designed to streamline the job search process for both job seekers and employers.",
-    image: "/images/projects/project_3.png",
-    tag: ["All", "Web"],
+    image: "/images/project_3.png",
+    tag: ["All", "Web Projects"],
     gitUrl: "https://github.com/kazekunal/buzz_job",
     previewUrl: "https://buzzjob.vercel.app/",
   },
@@ -36,8 +36,8 @@ const projectsData = [
     id: 4,
     title: "Breeze'24 - Circa'72, University Fest",
     description: "A full stack application where attendees could effortlessly register and make payments for various events for my University's Festival. Focusing on the intricate development of distinct user roles, the e-commerce functionality, and the robust backend architecture.",
-    image: "/images/projects/project_4.png",
-    tag: ["All", "Web"],
+    image: "/images/project_4.png",
+    tag: ["All", "Web Projects"],
     gitUrl: "https://github.com/thearyanthegr8/Breeze2024",
     previewUrl: "https://www.instagram.com/p/C2acIihvtY6/",
   },
@@ -45,8 +45,8 @@ const projectsData = [
     id: 5,
     title: "sentiment_Analysis",
     description: "We've conducted a sentiment analysis on the dataset, which classifies each tweet into categories such as positive, negative, or neutral sentiment. The analysis provides valuable insights into the public's emotional responses and opinions regarding the G20 Summit.",
-    image: "/images/projects/project_5.png",
-    tag: ["All", "Machine Learning"],
+    image: "/images/project_5.png",
+    tag: ["All", "ML Projects"],
     gitUrl: "https://github.com/kazekunal/sentiment_Analysis",
     previewUrl: "https://drive.google.com/uc?id=1sD1OjdYvKoPuZMyPe_bBi0CqBb42OrkR&export=download",
   },
@@ -54,8 +54,8 @@ const projectsData = [
     id: 6,
     title: "Finvest, finance-tech club",
     description: "Welcome to the exciting world of Finvest, where finance becomes an exhilarating adventure rather than a daunting mystery! We're not your average finance club– at Finvest, we're on a mission to unleash the power of financial literacy and make it accessible to everyone.",
-    image: "/images/projects/project_6.png",
-    tag: ["All", "Web"],
+    image: "/images/project_6.png",
+    tag: ["All", "Web Projects"],
     gitUrl: "https://github.com/kazekunal/finvest-website",
     previewUrl: "https://finvestsnu.vercel.app/",
   },
@@ -92,13 +92,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="Web Projects"
+          isSelected={tag === "Web Projects"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Machine Learning"
-          isSelected={tag === "Machine Learning"}
+          name="ML Projects"
+          isSelected={tag === "ML Projects"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
