@@ -59,6 +59,15 @@ const projectsData = [
     gitUrl: "https://github.com/kazekunal/finvest-website",
     previewUrl: "https://finvestsnu.vercel.app/",
   },
+  {
+    id: 7,
+    title: "Sales Forecast",
+    description: "This project utilizes Linear Regression, a fundamental machine learning algorithm, to predict the number of items sold in various stores. We use a comprehensive training dataset that includes 900,000 data points, each detailing the date, item, store, and the quantity of items sold. The goal is to provide accurate sales forecasts that can help in inventory management and marketing strategies.",
+    image: "/images/project_7.png",
+    tag: ["All Projects", "ML Projects"],
+    gitUrl: "https://github.com/kazekunal/Sales_forecast",
+    previewUrl: "/",
+  }
 ];
 
 const ProjectsSection = () => {
