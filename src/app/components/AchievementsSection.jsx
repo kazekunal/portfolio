@@ -27,6 +27,7 @@ const achievementsList = [
   {
     metric: "Years",
     value: "3",
+    postfix: "+",
   },
 ];
 
@@ -46,6 +47,10 @@ const AchievementsSection = () => {
                   includeComma
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
+                  transitions={(index) => ({
+                    type: "spring",
+                    duration: index + 0.3,
+                  })}
                   className="text-white text-4xl font-bold"
                   configs={(_, index) => {
                     return {
