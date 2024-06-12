@@ -67,6 +67,15 @@ const projectsData = [
     tag: ["All Projects", "ML Projects"],
     gitUrl: "https://github.com/kazekunal/Sales_forecast",
     previewUrl: "/",
+  },
+  {
+    id: 8,
+    title: "Handsign-Recognition",
+    description: "This project implements a real-time hand gesture recognition system using a webcam. The system segments the hand region from the background and displays the thresholded hand image and the contours of the hand.",
+    image: "/images/project_8.jpg",
+    tag: ["All Projects", "ML Projects"],
+    gitUrl: "https://github.com/kazekunal/Handsign-Recognition",
+    previewUrl: "https://drive.google.com/file/d/1OpNc-y5iGxpcQm_SUkthlCeZW4t91YMD/view?usp=drivesdk",
   }
 ];
 
