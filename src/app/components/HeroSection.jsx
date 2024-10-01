@@ -26,11 +26,11 @@ const HeroSection = () => {
               sequence={[
                 "Kunal Passan",
                 2000,
-                "Web Developer",
+                "AI Developer",
                 2000,
                 "UI/UX Designer",
                 2000,
-                "AI Data Analyst",
+                "Data Analyst",
                 2000,
               ]}
               wrapper="span"
@@ -39,7 +39,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            A passionate Next web developer based in Gurugram, Haryana. I create bespoke websites to help people go further online.
+          Innovative Next.js developer crafting high-performance web solutions in Gurugram, Haryana. Specializing in websites that elevate online presence and drive business growth.
           </p>
           <div>
             <Link
