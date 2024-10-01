@@ -26,13 +26,14 @@ const HeroSection = () => {
               sequence={[
                 "Kunal Passan",
                 2000,
-                "AI Developer",
+                "AI Developer", //ai developer features coming soon
                 2000,
                 "UI/UX Designer",
                 2000,
                 "Data Analyst",
                 2000,
               ]}
+
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -48,7 +49,7 @@ const HeroSection = () => {
               My Projects
             </Link>
             <Link
-              href="Resume_ats.pdf"  target="_blank"
+              href="resume_ats.pdf"  target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
