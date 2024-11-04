@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
-import MailIcon from "../../../public/gmail.png"
+import MailIcon from "../../../public/gmail.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -11,32 +11,30 @@ const EmailSection = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
+    const formData = {
+      access_key: "77857d85-8d56-4e25-9c13-7247134d2421",
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
 
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
+      const result = await response.json();
+      if (result.success) {
+        setEmailSubmitted(true);
+        console.log("Message sent successfully");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
     }
   };
 
@@ -54,7 +52,7 @@ const EmailSection = () => {
           {" "}
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
-            get back to you!
+          get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
           <Link href="https://github.com/kazekunal">
